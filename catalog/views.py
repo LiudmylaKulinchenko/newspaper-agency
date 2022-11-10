@@ -72,7 +72,7 @@ class RedactorCreateView(generic.CreateView):
 
 class RedactorUpdateView(generic.UpdateView):
     model = Redactor
-    form_class = RedactorUpdatingForm
+    form_class = RedactorCreationForm
 
 
 class RedactorDeleteView(generic.DeleteView):
