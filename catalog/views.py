@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
@@ -32,3 +33,9 @@ class TopicListView(generic.ListView):
     template_name = "catalog/topic_list.html"
     paginate_by = 5
     queryset = Topic.objects.all()
+
+
+class RedactorListView(generic.ListView):
+    model = Redactor
+    paginate_by = 5
+    queryset = get_user_model().objects.all()
