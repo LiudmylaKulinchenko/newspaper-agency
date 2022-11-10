@@ -30,3 +30,11 @@ class Newspaper(models.Model):
     published_date = models.DateTimeField(auto_now_add=True)
     topic = models.ForeignKey("Topic", on_delete=models.CASCADE)
     publishers = models.ManyToManyField("Redactor", related_name="newspapers")
+
+    class Meta:
+        ordering = ["title"]
+
+    def __str__(self) -> str:
+        date = self.published_date.strftime("%d/%m/%Y")
+
+        return f"{self.title} (topic: {self.topic}, date: {date})"
