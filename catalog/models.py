@@ -19,3 +19,6 @@ class Redactor(AbstractUser):
         verbose_name = "redactor"
         verbose_name_plural = "redactors"
         ordering = ["username"]
+
+    def __str__(self) -> str:
+        return f"{self.username} ({self.first_name} {self.last_name})"
