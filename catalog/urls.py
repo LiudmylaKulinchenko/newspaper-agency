@@ -27,7 +27,7 @@ urlpatterns = [
         "topics/<int:pk>/update/",
         TopicUpdateView.as_view(),
         name="topic-update"
-    )
+    ),
     path(
         "redactors/",
         RedactorListView.as_view(),
