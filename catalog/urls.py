@@ -1,6 +1,6 @@
 from django.urls import path
 
-from catalog.views import index, TopicListView, RedactorListView
+from catalog.views import index, TopicListView, RedactorListView, NewspaperListView
 
 urlpatterns = [
     path("", index, name="index"),
@@ -14,7 +14,11 @@ urlpatterns = [
         RedactorListView.as_view(),
         name="redactor-list",
     ),
-
+    path(
+        "newspapers/",
+        NewspaperListView.as_view(),
+        name="newspaper-list",
+    ),
 ]
 
 app_name = "catalog"

@@ -39,3 +39,9 @@ class RedactorListView(generic.ListView):
     model = Redactor
     paginate_by = 5
     queryset = get_user_model().objects.all()
+
+
+class NewspaperListView(generic.ListView):
+    model = Newspaper
+    paginate_by = 5
+    queryset = Newspaper.objects.all().select_related("topics")
