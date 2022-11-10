@@ -10,3 +10,7 @@ class Topic(models.Model):
 
     def __str__(self) -> str:
         return self.name
+
+
+class Redactor(AbstractUser):
+    years_of_expirience = models.IntegerField()
