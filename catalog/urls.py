@@ -8,6 +8,7 @@ from catalog.views import (
     RedactorDetailView,
     NewspaperDetailView,
     TopicCreateView,
+    TopicUpdateView,
 )
 
 urlpatterns = [
@@ -22,6 +23,11 @@ urlpatterns = [
         TopicCreateView.as_view(),
         name="topic-create"
     ),
+    path(
+        "topics/<int:pk>/update/",
+        TopicUpdateView.as_view(),
+        name="topic-update"
+    )
     path(
         "redactors/",
         RedactorListView.as_view(),
