@@ -1,10 +1,22 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>{{ newspaper.title }}</h1>
+  <h1>
+    {{ newspaper.title }}
+    <a href="{% url 'catalog:newspaper-update' pk=newspaper.id %}" class="btn btn-secondary link-to-page">
+      Edit
+    </a>
+
+    <a href="{% url 'catalog:newspaper-delete' pk=newspaper.id %}" class="btn btn-danger link-to-page">
+      Delete
+    </a>
+  </h1>
+
   <h4>{{ newspaper.topic }}</h4>
   <hr>
   <p>{{ newspaper.content }}</p>
+  <hr>
+  <p><strong>Date of publication:</strong> {{ newspaper.published_date }}</p>
   <hr>
   <h4>Redactors:</h4>
   {% if redactor in newspaper.redactors.all %}
@@ -12,6 +24,6 @@
       <p>{{ redactor.username }}</p>
     {% endfor %}
   {% else %}
-    <p>Anonim publication</p>
+    <p>Anonymous publication</p>
   {% endif %}
 {% endblock %}
