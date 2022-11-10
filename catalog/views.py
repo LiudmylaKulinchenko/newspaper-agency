@@ -48,6 +48,11 @@ class TopicUpdateView(generic.UpdateView):
     success_url = reverse_lazy("catalog:topic-list")
 
 
+class TopicDeleteView(generic.DeleteView):
+    model = Topic
+    success_url = reverse_lazy("catalog:topic-list")
+
+
 class RedactorListView(generic.ListView):
     model = Redactor
     paginate_by = 5
