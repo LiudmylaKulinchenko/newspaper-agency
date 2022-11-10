@@ -84,7 +84,7 @@ class RedactorDeleteView(LoginRequiredMixin, generic.DeleteView):
 class NewspaperListView(LoginRequiredMixin, generic.ListView):
     model = Newspaper
     paginate_by = 5
-    queryset = Newspaper.objects.prefetch_related("redactors")
+    queryset = Newspaper.objects.select_related("topic")
 
 
 class NewspaperDetailView(LoginRequiredMixin, generic.DetailView):
