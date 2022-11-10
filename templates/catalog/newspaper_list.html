@@ -4,13 +4,20 @@
   <h1>
     Newspaper list
   </h1>
-
+  <br>
   {% if newspaper_list %}
     <ul>
       {% for newspaper in newspaper_list %}
         <li>
-          {{ newspaper }}
+          <h3>
+            <a href="{% url 'catalog:newspaper-detail' pk=newspaper.id %}">
+            {{ newspaper.title }}
+          </a>
+          ({{ newspaper.topic }})
+          </h3>
+          {{ newspaper.published_date }}
         </li>
+        <hr>
       {% endfor %}
     </ul>
   {% else %}
