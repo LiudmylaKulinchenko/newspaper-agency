@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>
+    Redactor list
+  </h1>
+
+  {% if redactor_list %}
+    <ul>
+      {% for redactor in redactor_list %}
+        <li>
+          {{ redactor.name }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no redactors</p>
+  {% endif %}
+{% endblock %}
