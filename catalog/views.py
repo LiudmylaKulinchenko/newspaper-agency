@@ -1,5 +1,7 @@
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
+from django.views import generic
 
 from catalog.models import Redactor, Newspaper, Topic
 
@@ -22,3 +24,11 @@ def index(request):
     }
 
     return render(request, "catalog/index.html", context=context)
+
+
+class TopicListView(generic.ListView):
+    model = Topic
+    context_object_name = "manufacturer_list"
+    template_name = "topic/topic_list.html"
+    paginate_by = 5
+    queryset = Topic.objects.all()
