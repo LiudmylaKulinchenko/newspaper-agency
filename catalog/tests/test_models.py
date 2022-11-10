@@ -48,7 +48,7 @@ class ModelsTests(TestCase):
     def test_create_redactor_with_years_of_expirience(self):
         username = "test"
         password = "1test1234"
-        years_of_expirience = "5"
+        years_of_expirience = 5
 
         redactor = get_user_model().objects.create_user(
             username=username,

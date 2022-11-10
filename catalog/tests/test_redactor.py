@@ -41,7 +41,7 @@ class PrivateRedactorTests(TestCase):
         get_user_model().objects.create_user(
             username="Second redactor",
             password="second1234",
-            years_of_expirience="3",
+            years_of_expirience=3,
         )
 
         response = self.client.get(REDACTORS_LIST_URL)
