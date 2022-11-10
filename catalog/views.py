@@ -88,3 +88,20 @@ class NewspaperListView(generic.ListView):
 
 class NewspaperDetailView(generic.DetailView):
     model = Newspaper
+
+
+class NewspaperCreateView(LoginRequiredMixin, generic.CreateView):
+    model = Newspaper
+    form_class = NewspaperForm
+    success_url = reverse_lazy("catalog:newspaper-list")
+
+
+class NewspaperUpdateView(LoginRequiredMixin, generic.UpdateView):
+    model = Newspaper
+    form_class = NewspaperForm
+    success_url = reverse_lazy("catalog:newspaper-list")
+
+
+class NewspaperDeleteView(LoginRequiredMixin, generic.DeleteView):
+    model = Newspaper
+    success_url = reverse_lazy("catalog:newspaper-list")
