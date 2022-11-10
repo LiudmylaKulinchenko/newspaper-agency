@@ -28,7 +28,7 @@ def index(request):
 
 class TopicListView(generic.ListView):
     model = Topic
-    context_object_name = "manufacturer_list"
-    template_name = "topic/topic_list.html"
+    context_object_name = "topic_list"
+    template_name = "catalog/topic_list.html"
     paginate_by = 5
     queryset = Topic.objects.all()
