@@ -5,7 +5,7 @@ from catalog.views import (
     TopicListView,
     RedactorListView,
     NewspaperListView,
-    RedacteorDetailView,
+    RedactorDetailView,
     NewspaperDetailView,
 )
 
@@ -23,7 +23,7 @@ urlpatterns = [
     ),
     path(
         "redactors/<int:pk>/",
-        RedacteorDetailView.as_view(), name="redactor-detail"
+        RedactorDetailView.as_view(), name="redactor-detail"
     ),
     path(
         "newspapers/",
