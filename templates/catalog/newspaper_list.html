@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>
+    Newspaper list
+  </h1>
+
+  {% if newspaper_list %}
+    <ul>
+      {% for newspaper in newspaper_list %}
+        <li>
+          {{ newspaper }}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no newspapers</p>
+  {% endif %}
+{% endblock %}
