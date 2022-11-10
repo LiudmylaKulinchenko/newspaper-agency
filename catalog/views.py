@@ -64,6 +64,21 @@ class RedactorDetailView(generic.DetailView):
     queryset = get_user_model().objects.prefetch_related("newspapers__topic")  # TODO: prefetch_related("newspapers")
 
 
+class RedactorCreateView(generic.CreateView):
+    model = Redactor
+    form_class = RedactorCreationForm
+
+
+class RedactorUpdateView(generic.UpdateView):
+    model = Redactor
+    form_class = RedactorUpdatingForm
+
+
+class RedactorDeleteView(generic.DeleteView):
+    model = Redactor
+    success_url = reverse_lazy("catalog:redactor-list")
+
+
 class NewspaperListView(generic.ListView):
     model = Newspaper
     paginate_by = 5
