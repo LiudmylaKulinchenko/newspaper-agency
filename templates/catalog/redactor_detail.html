@@ -3,18 +3,37 @@
 {% block content %}
   <h1>
     Username: {{ redactor.username }}
-{#    <a href="{% url 'catalog:redactor-delete' pk=redactor.id %}" class="btn btn-danger link-to-page">#}
-{#      Delete#}
-{#    </a>#}
-{#    <a href="{% url 'catalog:redactor-update' pk=redactor.id %}" class="btn btn-secondary link-to-page">#}
-{#      Update#}
-{#    </a>#}
+    <a href="{% url 'catalog:redactor-delete' pk=redactor.id %}" class="btn btn-danger link-to-page">
+      Delete
+    </a>
+    <a href="{% url 'catalog:redactor-update' pk=redactor.id %}" class="btn btn-secondary link-to-page">
+      Update
+    </a>
   </h1>
 
-  <p><strong>First name:</strong> {{ redactor.first_name }}</p>
-  <p><strong>Last name:</strong> {{ redactor.last_name }}</p>
-  <p><strong>Years of expirience:</strong> {{ redactor.years_of_expirience }}</p>
+  <hr>
+  {% if redactor.first_name %}
+    <p><strong>First name:</strong> {{ redactor.first_name }}</p>
+  {% endif %}
 
+  {% if redactor.last_name %}
+    <p><strong>Last name:</strong> {{ redactor.last_name }}</p>
+  {% endif %}
+
+  <p>
+    <strong>Email:</strong>
+    {% if redactor.email %}
+     {{ redactor.email }}
+    {% else %}
+      no email provided
+    {% endif %}
+  </p>
+
+  {% if redactor.years_of_expirience %}
+    <p><strong>Years of expirience:</strong> {{ redactor.years_of_expirience }}</p>
+  {% endif %}
+
+  <hr>
   <div class="ml-3">
     <h4>Newspapers</h4>
 
