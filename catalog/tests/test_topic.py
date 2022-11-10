@@ -9,9 +9,9 @@ TOPICS_LIST_URL = reverse("catalog:topic-list")
 
 class PublicTopicTests(TestCase):
     def test_login_required_list_page(self):
-        resp = self.client.get(TOPICS_LIST_URL)
+        response = self.client.get(TOPICS_LIST_URL)
 
-        self.assertNotEqual(resp.status_code, 200)
+        self.assertNotEqual(response.status_code, 200)
 
 
 class PrivateTopicTests(TestCase):
@@ -26,12 +26,12 @@ class PrivateTopicTests(TestCase):
         Topic.objects.create(name="First")
         Topic.objects.create(name="Second")
 
-        resp = self.client.get(TOPICS_LIST_URL)
+        response = self.client.get(TOPICS_LIST_URL)
 
         topics = Topic.objects.all()
 
-        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(response.status_code, 200)
         self.assertEqual(
-            list(resp.context["topic_list"]),
+            list(response.context["topic_list"]),
             list(topics),
         )
