@@ -2,6 +2,7 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from django.views import generic
 
 from catalog.models import Redactor, Newspaper, Topic
@@ -33,6 +34,12 @@ class TopicListView(generic.ListView):
     template_name = "catalog/topic_list.html"
     paginate_by = 5
     queryset = Topic.objects.all()
+
+
+class TopicCreateView(generic.CreateView):
+    model = Topic
+    fields = "__all__"
+    success_url = reverse_lazy("catalog:topic-list")
 
 
 class RedactorListView(generic.ListView):
