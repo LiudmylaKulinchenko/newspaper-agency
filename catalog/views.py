@@ -4,7 +4,6 @@ from django.shortcuts import render
 from catalog.models import Redactor, Newspaper, Topic
 
 
-@login_required
 def index(request):
     """View function for the home page of the site."""
 
