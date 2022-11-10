@@ -5,6 +5,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 
+from catalog.forms import RedactorCreationForm
 from catalog.models import Redactor, Newspaper, Topic
 
 
