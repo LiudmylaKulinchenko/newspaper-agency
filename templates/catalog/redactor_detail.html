@@ -20,15 +20,6 @@
     <p><strong>Last name:</strong> {{ redactor.last_name }}</p>
   {% endif %}
 
-  <p>
-    <strong>Email:</strong>
-    {% if redactor.email %}
-     {{ redactor.email }}
-    {% else %}
-      no email provided
-    {% endif %}
-  </p>
-
   {% if redactor.years_of_expirience %}
     <p><strong>Years of expirience:</strong> {{ redactor.years_of_expirience }}</p>
   {% endif %}

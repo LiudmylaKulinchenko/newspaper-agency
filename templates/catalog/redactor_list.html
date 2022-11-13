@@ -1,40 +1,70 @@
-{% extends "base.html" %}
+{% extends "layouts/base.html" %}
 {% load crispy_forms_filters %}
 
 {% block content %}
-  <h1>
-    Redactor list
-    <a href="{% url 'catalog:redactor-create' %}" class="btn btn-primary link-to-page">
-      Create
-    </a>
-  </h1>
 
-  <form action="" method="get" class="form-inline">
-    {{ search_form|crispy }}
-    <input class="btn btn-secondary" type="submit" value="🔎">
-  </form>
+  <div class="section-header pb-0 bg-primary text-white">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-12 col-md-8 text-center">
+                  <h1 class="display-3 mb-4">
+                    Redactor list
+                    <a href="{% url 'catalog:topic-create' %}" class="btn btn-tertiary link-to-page">
+                      Create
+                    </a>
+                  </h1>
+                </div>
+                <form action="" method="get" class="form-inline">
+                  <div class="mb-4">
+                    <div class="input-group">
+                      {{ search_form|crispy }}
+                      <div class="input-group-append">
+                        <button class="btn btn-tertiary" type="submit">
+                          🔎
+                        </button>
+                      </div>
+                  </div>
+                </form>
+              </div>
+          </div>
+      </div>
+  </div>
 
-  <br>
-  {% if redactor_list %}
-  <table class="table">
-    <tr>
-      <th>ID</th>
-      <th>Username</th>
-      <th>First name</th>
-      <th>Last name</th>
-    </tr>
-  {% for redactor in redactor_list %}
-    <tr>
-      <td>{{ redactor.id }}</td>
-      <td><a href="{% url 'catalog:redactor-detail' pk=redactor.id %}">{{ redactor.username }} {% if user == redactor %} (Me){% endif %}</a></td>
-      <td>{{ redactor.first_name }}</td>
-      <td>{{ redactor.last_name }}</td>
-    </tr>
-  {% endfor %}
+  <section class="section section-md">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          {% if redactor_list %}
 
-  </table>
-  {% else %}
-    <p>There are no redactors in the agency.</p>
-  {% endif %}
+            <table class="table table-hover">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Username</th>
+                <th scope="col">Full name</th>
+              </tr>
+
+              {% for redactor in redactor_list %}
+                <tr>
+                  <td>
+                      {{ redactor.id }}
+                  </td>
+                  <td>
+                    <a href="{% url 'catalog:redactor-detail' pk=redactor.id %}">
+                      {{ redactor.username }}
+                      {% if user == redactor %} (Me){% endif %}
+                    </a>
+                  </td>
+                  <td>
+                    {{ redactor.first_name }} {{ redactor.last_name }}
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+          {% else %}
+            <p>There are no topics in the agency.</p>
+          {% endif %}
+        {% include "includes/pagination.html" %}
+        </div>
+      </div>
+  </section>
 
 {% endblock %}
