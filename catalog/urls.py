@@ -3,16 +3,17 @@ from django.urls import path
 from catalog.views import (
     index,
     TopicListView,
-    RedactorListView,
-    NewspaperListView,
-    RedactorDetailView,
-    NewspaperDetailView,
+    TopicDetailView,
     TopicCreateView,
     TopicUpdateView,
     TopicDeleteView,
+    RedactorListView,
+    RedactorDetailView,
     RedactorCreateView,
     RedactorUpdateView,
     RedactorDeleteView,
+    NewspaperListView,
+    NewspaperDetailView,
     NewspaperCreateView,
     NewspaperUpdateView,
     NewspaperDeleteView,
@@ -39,6 +40,11 @@ urlpatterns = [
         "topics/<int:pk>/delete/",
         TopicDeleteView.as_view(),
         name="topic-delete"
+    ),
+    path(
+        "topics/<int:pk>/",
+        TopicDetailView.as_view(),
+        name="topic-detail"
     ),
     path(
         "redactors/",

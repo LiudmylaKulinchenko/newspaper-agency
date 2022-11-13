@@ -59,6 +59,11 @@ class TopicListView(LoginRequiredMixin, generic.ListView):
         return self.queryset
 
 
+class TopicDetailView(LoginRequiredMixin, generic.DetailView):
+    model = Topic
+    queryset = Topic.objects.prefetch_related("newspapers")
+
+
 class TopicCreateView(LoginRequiredMixin, generic.CreateView):
     model = Topic
     fields = "__all__"
