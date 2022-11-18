@@ -1,11 +1,26 @@
-{% extends "base.html" %}
+{% extends "layouts/base.html" %}
 
 {% block content %}
-  <h1>Delete redactor?</h1>
-  <p><i><strong>All redactors newspapers</strong> also will be deleted!</i></p>
-  <form action="" method="post">
-    {% csrf_token %}
 
-    <input type="submit" value="Yes" class="btn btn-danger">
-  </form>
+  <section class="bg-primary text-white">
+
+    <div class="section-header pb-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+            <p class="text-muted">Redactor id: {{ redactor.id }}</p>
+            <h1>Delete redactor?</h1>
+            <p class="lead mb-5"><strong>All redactors newspapers</strong> also will be deleted!</p>
+            <form action="" method="post">
+              {% csrf_token %}
+
+              <input type="submit" value="Yes, delete" class="btn btn-danger">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
 {% endblock %}

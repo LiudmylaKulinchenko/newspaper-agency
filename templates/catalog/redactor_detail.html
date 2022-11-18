@@ -1,42 +1,48 @@
-{% extends "base.html" %}
+{% extends "layouts/base.html" %}
 
 {% block content %}
-  <h1>
-    Username: {{ redactor.username }}
-    <a href="{% url 'catalog:redactor-delete' pk=redactor.id %}" class="btn btn-danger link-to-page">
-      Delete
-    </a>
-    <a href="{% url 'catalog:redactor-update' pk=redactor.id %}" class="btn btn-secondary link-to-page">
-      Update
-    </a>
-  </h1>
 
-  <hr>
-  {% if redactor.first_name %}
-    <p><strong>First name:</strong> {{ redactor.first_name }}</p>
-  {% endif %}
-
-  {% if redactor.last_name %}
-    <p><strong>Last name:</strong> {{ redactor.last_name }}</p>
-  {% endif %}
-
-  {% if redactor.years_of_expirience %}
-    <p><strong>Years of expirience:</strong> {{ redactor.years_of_expirience }}</p>
-  {% endif %}
-
-  <hr>
-  <div class="ml-3">
-    <h4>Newspapers</h4>
-
-    {% for newspaper in redactor.newspapers.all %}
-        <hr>
-        <p><strong>Title:</strong> {{ newspaper.title }}</p>
-        <p><strong>Topic:</strong> {{ newspaper.topic }}</p>
-        <p><strong>Date of publication:</strong> {{ newspaper.published_date }}</p>
-        <p class="text-muted"><strong>Id:</strong> {{ newspaper.id }}</p>
-
-    {% empty %}
-      <p>No publications!</p>
-    {% endfor %}
+  <div class="section-header pb-0 bg-primary text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+          <h1 class="display-3 mb-4">
+            Username: {{ redactor.username }}
+            <a href="{% url 'catalog:redactor-update' pk=redactor.id %}" class="btn btn-tertiary link-to-page">
+              Update
+            </a>
+            <a href="{% url 'catalog:redactor-delete' pk=redactor.id %}" class="btn btn-danger link-to-page">
+              Delete
+            </a>
+          </h1>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <main>
+
+    <section class="section section-md">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="ml-3">
+              <h4>Newspapers</h4>
+
+              {% for newspaper in redactor.newspapers.all %}
+                <hr>
+                <p class="text-muted"><strong>Id:</strong> {{ newspaper.id }}</p>
+                <p><strong>Title:</strong> {{ newspaper.title }}</p>
+                <p><strong>Topic:</strong> {{ newspaper.topic }}</p>
+                <p><strong>Date of publication:</strong> {{ newspaper.published_date }}</p>
+
+              {% empty %}
+                <p>No publications!</p>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+    </section>
+
+  </main>
+
 {% endblock %}

@@ -4,67 +4,77 @@
 {% block content %}
 
   <div class="section-header pb-0 bg-primary text-white">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-12 col-md-8 text-center">
-                  <h1 class="display-3 mb-4">
-                    Redactor list
-                    <a href="{% url 'catalog:topic-create' %}" class="btn btn-tertiary link-to-page">
-                      Create
-                    </a>
-                  </h1>
-                </div>
-                <form action="" method="get" class="form-inline">
-                  <div class="mb-4">
-                    <div class="input-group">
-                      {{ search_form|crispy }}
-                      <div class="input-group-append">
-                        <button class="btn btn-tertiary" type="submit">
-                          🔎
-                        </button>
-                      </div>
-                  </div>
-                </form>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+          <h1 class="display-3 mb-4">
+            Redactor list
+            <a href="{% url 'catalog:redactor-create' %}" class="btn btn-tertiary link-to-page">
+              Create
+            </a>
+          </h1>
+        </div>
+        <form action="" method="get" class="form-inline">
+          <div class="mb-4">
+            <div class="input-group">
+              {{ search_form|crispy }}
+              <div class="input-group-append">
+                <button class="btn btn-tertiary" type="submit">
+                  🔎
+                </button>
               </div>
+            </div>
           </div>
+        </form>
       </div>
+    </div>
   </div>
 
-  <section class="section section-md">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          {% if redactor_list %}
+  <main>
 
-            <table class="table table-hover">
-              <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Username</th>
-                <th scope="col">Full name</th>
-              </tr>
+    <section class="section section-md">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            {% if redactor_list %}
 
-              {% for redactor in redactor_list %}
+              <table class="table table-hover">
                 <tr>
-                  <td>
-                      {{ redactor.id }}
-                  </td>
-                  <td>
-                    <a href="{% url 'catalog:redactor-detail' pk=redactor.id %}">
-                      {{ redactor.username }}
-                      {% if user == redactor %} (Me){% endif %}
-                    </a>
-                  </td>
-                  <td>
-                    {{ redactor.first_name }} {{ redactor.last_name }}
-                  </td>
+                  <th scope="col">ID</th>
+                  <th scope="col">Username</th>
+                  <th scope="col">Full name</th>
                 </tr>
-              {% endfor %}
-            </table>
-          {% else %}
-            <p>There are no topics in the agency.</p>
-          {% endif %}
-        {% include "includes/pagination.html" %}
+
+                {% for redactor in redactor_list %}
+                  <tr>
+                    <td>
+                        {{ redactor.id }}
+                    </td>
+                    <td>
+                      <a href="{% url 'catalog:redactor-detail' pk=redactor.id %}" class="text-underline fw-bold">
+                        {{ redactor.username }}
+                        {% if user == redactor %} (Me){% endif %}
+                      </a>
+                    </td>
+                    <td>
+                      {% if redactor.first_name or redactor.last_name%}
+                        {{ redactor.first_name }} {{ redactor.last_name }}
+                      {% else %}
+                        not provided
+                      {% endif %}
+                    </td>
+                  </tr>
+                {% endfor %}
+              </table>
+            {% else %}
+              <p>There are no topics in the agency.</p>
+            {% endif %}
+
+          {% include "includes/pagination.html" %}
+
+          </div>
         </div>
-      </div>
-  </section>
+    </section>
+
+  </main>
 
 {% endblock %}

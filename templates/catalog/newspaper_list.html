@@ -19,7 +19,9 @@
             <div class="input-group">
               {{ search_form|crispy }}
               <div class="input-group-append">
-                <button class="btn btn-tertiary" type="submit">🔎</button>
+                <button class="btn btn-tertiary" type="submit">
+                  🔎
+                </button>
               </div>
             </div>
           </div>
@@ -28,33 +30,48 @@
     </div>
   </div>
 
-  <section class="section section-md">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          {% if newspaper_list %}
-            <table class="table table-hover">
-              <tr>
-                <th scope="col"></th>
-              </tr>
-                {% for newspaper in newspaper_list %}
+  <main>
+
+    <section class="section section-md">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            {% if newspaper_list %}
+              <table class="table table-hover">
                 <tr>
-                  <td>
-                    <a href="{% url 'catalog:newspaper-detail' pk=newspaper.id %}">
-                      <h4>
-                        {{ newspaper.title }} ({{ newspaper.topic }})
-                      </h4>
-                    {{ newspaper.published_date }}
-                    </a>
-                  </td>
+                  <th scope="col">ID</th>
+                  <th scope="col">Title</th>
+                  <th scope="col">Topic</th>
+                  <th scope="col">Date</th>
                 </tr>
-              {% endfor %}
-            </table>
-          {% else %}
-            <p>There are no topics in the agency.</p>
-          {% endif %}
-        {% include "includes/pagination.html" %}
+                  {% for newspaper in newspaper_list %}
+                  <tr>
+                    <td>
+                      {{ newspaper.id }}
+                    </td>
+                    <td>
+                      <a href="{% url 'catalog:newspaper-detail' pk=newspaper.id %}" class="text-underline fw-bold">
+                        {{ newspaper.title }}
+                      </a>
+                    </td>
+                    <td>
+                      {{ newspaper.topic }}
+                    </td>
+                    <td>
+                      {{ newspaper.published_date }}
+                    </td>
+                  </tr>
+                {% endfor %}
+              </table>
+            {% else %}
+              <p>There are no topics in the agency.</p>
+            {% endif %}
+
+          {% include "includes/pagination.html" %}
+
+          </div>
         </div>
-      </div>
-  </section>
+    </section>
+
+  </main>
 
 {% endblock %}

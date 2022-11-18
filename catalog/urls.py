@@ -3,7 +3,6 @@ from django.urls import path
 from catalog.views import (
     index,
     TopicListView,
-    TopicDetailView,
     TopicCreateView,
     TopicUpdateView,
     TopicDeleteView,
@@ -42,18 +41,14 @@ urlpatterns = [
         name="topic-delete"
     ),
     path(
-        "topics/<int:pk>/",
-        TopicDetailView.as_view(),
-        name="topic-detail"
-    ),
-    path(
         "redactors/",
         RedactorListView.as_view(),
         name="redactor-list",
     ),
     path(
         "redactors/<int:pk>/",
-        RedactorDetailView.as_view(), name="redactor-detail"
+        RedactorDetailView.as_view(),
+        name="redactor-detail"
     ),
     path(
         "redactors/create/",
@@ -77,11 +72,24 @@ urlpatterns = [
     ),
     path(
         "newspapers/<int:pk>/",
-        NewspaperDetailView.as_view(), name="newspaper-detail"
+        NewspaperDetailView.as_view(),
+        name="newspaper-detail"
     ),
-    path("newspapers/create/", NewspaperCreateView.as_view(), name="newspaper-create"),
-    path("newspapers/<int:pk>/update/", NewspaperUpdateView.as_view(), name="newspaper-update"),
-    path("newspapers/<int:pk>/delete/", NewspaperDeleteView.as_view(), name="newspaper-delete"),
+    path(
+        "newspapers/create/",
+        NewspaperCreateView.as_view(),
+        name="newspaper-create"
+    ),
+    path(
+        "newspapers/<int:pk>/update/",
+        NewspaperUpdateView.as_view(),
+        name="newspaper-update"
+    ),
+    path(
+        "newspapers/<int:pk>/delete/",
+        NewspaperDeleteView.as_view(),
+        name="newspaper-delete"
+    ),
 ]
 
 app_name = "catalog"

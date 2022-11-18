@@ -1,11 +1,19 @@
 from django.contrib.auth import get_user_model
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import PasswordResetForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 
-from catalog.forms import RedactorCreationForm, NewspaperForm, TopicSearchForm, RedactorSearchForm, NewspaperSearchForm
+from catalog.forms import (
+    RedactorCreationForm,
+    RedactorUpdatingForm,
+    NewspaperForm,
+    TopicSearchForm,
+    RedactorSearchForm,
+    NewspaperSearchForm,
+)
 from catalog.models import Redactor, Newspaper, Topic
 
 
@@ -57,11 +65,6 @@ class TopicListView(LoginRequiredMixin, generic.ListView):
             )
 
         return self.queryset
-
-
-class TopicDetailView(LoginRequiredMixin, generic.DetailView):
-    model = Topic
-    queryset = Topic.objects.prefetch_related("newspapers")
 
 
 class TopicCreateView(LoginRequiredMixin, generic.CreateView):
@@ -120,7 +123,8 @@ class RedactorCreateView(LoginRequiredMixin, generic.CreateView):
 
 class RedactorUpdateView(LoginRequiredMixin, generic.UpdateView):
     model = Redactor
-    form_class = RedactorCreationForm
+    form_class = RedactorUpdatingForm
+    success_url = reverse_lazy("catalog:redactor-list")
 
 
 class RedactorDeleteView(LoginRequiredMixin, generic.DeleteView):

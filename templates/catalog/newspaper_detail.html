@@ -1,29 +1,50 @@
-{% extends "base.html" %}
+{% extends "layouts/base.html" %}
 
 {% block content %}
-  <h1>
-    {{ newspaper.title }}
-    <a href="{% url 'catalog:newspaper-update' pk=newspaper.id %}" class="btn btn-secondary link-to-page">
-      Edit
-    </a>
+    <div class="section-header pb-0 bg-primary text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+          <h1 class="display-3 mb-4">
+            {{ newspaper.title }}
+              <a href="{% url 'catalog:newspaper-update' pk=newspaper.id %}" class="btn btn-tertiary link-to-page">
+                Update
+              </a>
+              <a href="{% url 'catalog:newspaper-delete' pk=newspaper.id %}" class="btn btn-danger link-to-page">
+                Delete
+              </a>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <a href="{% url 'catalog:newspaper-delete' pk=newspaper.id %}" class="btn btn-danger link-to-page">
-      Delete
-    </a>
-  </h1>
+  <main>
 
-  <h4>{{ newspaper.topic }}</h4>
-  <hr>
-  <p>{{ newspaper.content }}</p>
-  <hr>
-  <p><strong>Date of publication:</strong> {{ newspaper.published_date }}</p>
-  <hr>
-  <h4>Redactors:</h4>
-  {% if redactor in newspaper.redactors.all %}
-    {% for redactor in newspaper.redactors.all %}
-      <p>{{ redactor.username }}</p>
-    {% endfor %}
-  {% else %}
-    <p>Anonymous publication</p>
-  {% endif %}
+  <section class="section section-md">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="ml-3">
+            <h2>TOPIC: {{ newspaper.topic }}</h2>
+            <hr>
+            <p>{{ newspaper.content }}</p>
+            <hr>
+            <h4>Date of publication: </h4>
+            <p>{{ newspaper.published_date }}</p>
+            <hr>
+            <h4>Redactors:</h4>
+            {% if redactor in newspaper.redactors.all %}
+              {% for redactor in newspaper.redactors.all %}
+                <p>{{ redactor.username }}</p>
+              {% endfor %}
+            {% else %}
+              <p>Anonymous publication</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+  </section>
+
+  </main>
+
 {% endblock %}
