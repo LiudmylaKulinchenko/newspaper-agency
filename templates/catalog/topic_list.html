@@ -14,17 +14,15 @@
             </a>
           </h1>
         </div>
-        <form action="" method="get" class="form-inline">
-          <div class="mb-4">
-            <div class="input-group">
-              {{ search_form|crispy }}
-              <div class="input-group-append">
-                <button class="btn btn-tertiary" type="submit">
-                  🔎
-                </button>
+        <form method="get" action="" class="form-inline">
+          {% csrf_token %}
+            <div id="div_id_name" class="input-group mb-4">
+              <label for="id_name"></label>
+              <div class="input-group">
+                <input type="text" name="name" placeholder="Search by title..." maxlength="255" class="textinput textInput form-control" id="id_name">
+                <button type="submit" class="input-group-text" id="basic-addon2"><span class="fas fa-search"></span></button>
               </div>
             </div>
-          </div>
         </form>
       </div>
     </div>
