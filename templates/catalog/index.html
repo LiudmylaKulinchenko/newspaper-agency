@@ -1,0 +1,113 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}Home{% endblock %}
+
+
+{% block content %}
+
+  <main>
+
+    <!-- Hero -->
+    <section class="section-header bg-secondary text-white">
+      <div class="container">
+       <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-md-7 col-lg-6 text-center text-md-left">
+            <h1 class="display-2 mb-4">Full-Service <br class="d-none d-md-inline">NewsPaper Agency</h1>
+            <p class="lead mb-4 text-muted">Welcome! Here you can easely create your newspapers and search for others.</p>
+            <a href="{% url 'catalog:newspaper-list' %}" class="btn btn-tertiary me-3 animate-up-2">Go to Newspapers <span class="ms-2"><span class="fas fa-arrow-right"></span></span></a>
+          </div>
+          <div class="col-12 col-md-5 d-none d-md-block text-center"><img src="{{ ASSETS_ROOT }}/img/illustrations/about-illustration.svg" alt=""></div>
+         </div>
+      </div>
+      <figure class="position-absolute bottom-0 left-0 w-100 d-none d-md-block mb-n2">
+        <svg class="fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 43.4" style="enable-background:new 0 0 1920 43.4;" xml:space="preserve">
+          <path d="M0,23.3c0,0,405.1-43.5,697.6,0c316.5,1.5,108.9-2.6,480.4-14.1c0,0,139-12.2,458.7,14.3 c0,0,67.8,19.2,283.3-22.7v35.1H0V23.3z"></path>
+        </svg>
+      </figure>
+      <br/>
+    </section>
+    <!-- End of Hero section -->
+
+    <!-- Section -->
+    <section class="section section-lg pt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 text-center">
+
+            <div class="icon-box mb-4">
+              <a href="{% url 'catalog:redactor-list' %}">
+              <div class="icon icon-primary mb-4">
+                <span class="fas fa-user"></span>
+              </div>
+              <h3 class="h5">Redactors</h3>
+              <span class="counter display-3 text-gray d-block">{{ num_redactors }}</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col-md-4 col-lg-4 text-center">
+
+            <div class="icon-box mb-4">
+              <a href="{% url 'catalog:newspaper-list' %}">
+              <div class="icon icon-primary mb-4">
+                <span class="fas fa-money-check"></span>
+              </div>
+              <h3 class="h5">Newspapers Published</h3>
+              <span class="counter display-3 text-gray d-block">{{ num_newspapers }}</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col-md-4 col-lg-4 text-center">
+
+            <div class="icon-box mb-4">
+              <a href="{% url 'catalog:topic-list' %}">
+              <div class="icon icon-primary mb-4">
+                <span class="fas fa-globe-europe"></span>
+              </div>
+              <h3 class="h5">Topics</h3>
+              <span class="counter display-3 text-gray d-block">{{ num_topics }}</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of section -->
+
+  </main>
+
+  <section class="section py-0">
+    <div class="container z-2">
+      <div class="row position-relative justify-content-center align-items-cente">
+        <div class="col-12">
+          <!-- Card -->
+          <div class="card border-light px-4 py-1">
+            <div class="card-body text-center text-md-left">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h2 class="h1 mb-3">Want to publish!</h2>
+                  <p class="lead mb-4">
+                    Are you ready to make your post right now? Just click on the button below!
+                  </p>
+                  <a href="{% url 'catalog:newspaper-create' %}" class="btn btn-primary">
+                    <span class="me-1">
+                      <span class="fas fa-file-invoice"></span>
+                    </span>
+                    Create newspaper
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 mt-5 mt-md-0 text-md-right">
+                  <img src="{{ ASSETS_ROOT }}/img/illustrations/reading-side.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    <br/>
+    </section>
+
+{% endblock content %}

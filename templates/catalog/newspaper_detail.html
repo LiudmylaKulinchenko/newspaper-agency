@@ -1,0 +1,53 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+    <div class="section-header pb-0 bg-primary text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+          <h4 class="text-muted">Newspaper id: {{ newspaper.id }}</h4>
+          <h1 class="display-3 mb-4">
+            {{ newspaper.title }}
+              <a href="{% url 'catalog:newspaper-update' pk=newspaper.id %}" class="btn btn-tertiary link-to-page">
+                Update
+              </a>
+              <a href="{% url 'catalog:newspaper-delete' pk=newspaper.id %}" class="btn btn-danger link-to-page">
+                Delete
+              </a>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+  <section class="section section-md">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="ml-3">
+            <h2>TOPIC: {{ newspaper.topic }}</h2>
+            <hr>
+            <textarea name="content" cols="40" rows="18" minlength="10" maxlength="20" class="textarea form-control"
+                      style="resize: none" id="id_content">{{ newspaper.content }}</textarea>
+            <label for="id_content"></label>
+            <hr>
+            <h4>Date of publication: </h4>
+            <p>{{ newspaper.published_date }}</p>
+            <hr>
+            <h4>Redactors:</h4>
+            {% if newspaper.publishers.all %}
+              {% for redactor in newspaper.publishers.all %}
+                <p>{{ redactor.username }}</p>
+              {% endfor %}
+            {% else %}
+              <p>Anonymous publication</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+  </section>
+
+  </main>
+
+{% endblock %}

@@ -1,0 +1,463 @@
+[
+  {
+    "model": "catalog.redactor",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$6uM28XWOFX6ewyloJzjqmt$L+ZhofPylneoaL2iZS4sZu4ZMUNb4oIevfAdzOMn/eE=",
+      "last_login": "2022-08-08T14:14:03Z",
+      "is_superuser": true,
+      "username": "admin.user",
+      "first_name": "Admin",
+      "last_name": "User",
+      "email": "admin.user@taxi.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-08-08T13:58:29Z",
+      "years_of_expirience": 4,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.redactor",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$73Z1Y57bcoscZ37s9rE9v0$4SEQ0TtXwJKzO5/CRdFSrTifatiPjkZ38gM2H8Kqsdg=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "joyce.byers",
+      "first_name": "Joyce",
+      "last_name": "Byers",
+      "email": "joyce.byers@taxi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-08T14:17:04Z",
+      "years_of_expirience": 15,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.redactor",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$QtPol3T7x9quBj4BnbnVwW$UwT4kihkRfSvQEWEeuqVKwMgis2ikKVZfJDBcQMvOKY=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jim.hopper",
+      "first_name": "Jim",
+      "last_name": "Hopper",
+      "email": "jim.hopper@taxi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-08T14:19:09Z",
+      "years_of_expirience": "26",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.redactor",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l1$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jonathan.byers",
+      "first_name": "Jonathan",
+      "last_name": "Byers",
+      "email": "jonathan.byers@taxi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-08T14:19:09Z",
+      "years_of_expirience": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.redactor",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l1$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "dustin.henderson",
+      "first_name": "Dustin",
+      "last_name": "Henderson",
+      "email": "dustin.henderson@taxi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-09T14:19:09Z",
+      "years_of_expirience": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.redactor",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "mike.wheeler",
+      "first_name": "Mike",
+      "last_name": "Wheeler",
+      "email": "mike.wheeler@taxi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-09T14:19:09Z",
+      "years_of_expirience": 30,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.redactor",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "lucas.sinclair",
+      "first_name": "Lucas",
+      "last_name": "Sinclair",
+      "email": "lucas.sinclair@taxi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-09T14:19:09Z",
+      "years_of_expirience": 13,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.redactor",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "nancy.wheeler",
+      "first_name": "Nancy",
+      "last_name": "Wheeler",
+      "email": "nancy.wheeler@taxi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-09T14:19:09Z",
+      "years_of_expirience": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.redactor",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "martin.brenner",
+      "first_name": "Martin",
+      "last_name": "Brenner",
+      "email": "martin.brenner@taxi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-09T14:19:09Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "catalog.redactor",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "billy.hargrove",
+      "first_name": "Billy",
+      "last_name": "Hargrove",
+      "email": "billy.hargrove@taxi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-09T14:19:09Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+    {
+    "model": "catalog.redactor",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$9yU0PLTDKlL02PedUtk2l2$LKjj8O1xGiPGEkDpjsHk87db1iLgt8dgDqECzcsivio",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "bob.newby",
+      "first_name": "Bob",
+      "last_name": "Newby",
+      "email": "bob.newby@taxi.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-08-09T14:19:09Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+    {
+    "model": "catalog.newspaper",
+    "pk": 1,
+    "fields": {
+      "title": "Fruits stay fresh for less time than vegetables",
+      "published_date": "2022-08-09T14:19:09Z",
+      "content": "While eating at a restaurant is an enjoyable and convenient occasional treat, most individuals and families prepare their meals at home. To make breakfast, lunch, and dinner daily, these persons must have the required foods and ingredients on hand and ready to go; foods and ingredients are typically purchased from a grocery store, or an establishment that distributes foods, drinks, household products, and other items that're used by the typical consumer.\n\nProduce, or the term used to describe fresh fruits and vegetables, is commonly purchased by grocery store shoppers. In terms of fruit, most grocery stores offer bananas, apples, oranges, blackberries, raspberries, grapes, pineapples, cantaloupes, watermelons, and more; other grocery stores with larger produce selections might offer the listed fruits in addition to less common fruits, including mangoes, honeydews, starfruits, coconuts, and more.\n\nDepending on the grocery store, customers can purchase fruits in a few different ways. Some stores will charge a set amount per pound of fruit, and will weigh customers' fruit purchases and bill them accordingly; other stores will charge customers for each piece of fruit they buy, or for bundles of fruit (a bag of bananas, a bag of apples, etc.); other stores yet will simply charge by the container.\n\nVegetables, including lettuce, corn, tomatoes, onions, celery, cucumbers, mushrooms, and more are also sold at many grocery stores, and are purchased similarly to the way that fruits are. Grocery stores typically stock more vegetables than fruit at any given time, as vegetables remain fresh longer than fruits do, generally speaking.\n\nIt'd take quite a while to list everything else that today's massive grocery stores sell, but most customers take the opportunity to shop for staples, or foods that play a prominent role in the average diet, at the establishments. Staples include pasta, rice, flour, sugar, milk, meat, and eggs, and bread. All the listed staples are available in prepackaged containers, but can be purchased \"fresh\" in some grocery stores, wherein employees will measure and weigh fresh products and then provide them to customers.",
+      "topic": 1,
+      "publishers": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 2,
+    "fields": {
+      "title": "What is the name of the hotel where Mr. Abrams plans on staying?",
+      "published_date": "2022-08-08T13:58:29Z",
+      "content": "Receptionist: Good afternoon! This is Capitol Hotels in Washington, D.C. How may I help you?\n\nMr. Abrams: Hi, I’d like to schedule a reservation for this upcoming weekend from Friday night until Sunday.\n\nReceptionist: Sure! Let me check and see what rooms are available. Do you need a room with one bed or two?\n\nMr. Abrams: My wife and I will be visiting the city, but a room with one bed will be just fine.\n\nReceptionist: Alright... It looks like we have several rooms available. Would you care for a room with a balcony?\n\nMr. Abrams: A single room with no balcony will suit our needs just fine. I did notice on your website that you have a pool and an exercise room. Are these facilities available for all hotel guests?\n\nReceptionist: Yes, all hotel guests are allowed access to those facilities. The hotel stay also includes breakfast. We have a restaurant on-site that also serves lunch and dinner, but those meals are not included in your lodging fee.\n\nMr. Abrams: Okay, that’s fine. What time are both check-in and check-out?\n\nReceptionist: Check-in for you on Friday can be any time after 3:00 p.m. Check-out will be on Sunday before noon.\n\nMr. Abrams: Sounds great!\n\nReceptionist: I am glad that I could help you today. Is there anything else that you need at this point in time?\n\nMr. Abrams: Would you like my credit card information now, or can I take care of that upon my arrival to the hotel’s reception desk?\n\nReceptionist: We can handle payment upon your arrival on Friday. We look forward to seeing you then!\n\nMr. Abrams: Thank you! I look forward to my stay.\n\nReceptionist: Enjoy the rest of your week!",
+      "topic": 2,
+      "publishers": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 3,
+    "fields": {
+      "title": "The most famous suspension bridge in the world BROKEN?",
+      "published_date": "2022-01-05T17:00:29Z",
+      "content": "Some of the most important landmarks in the United States include feats of architecture and modern engineering. San Francisco, California, is a beautiful city on its own, but it is also home to The Golden Gate Bridge, a 1.7 mile suspension bridge connecting the San Francisco Peninsula to the Marin Headlands. The bridge holds the title of one of the Wonders of the Modern World according to the American Society of Civil Engineers.\n\nOne of the most popular ways to appreciate the bridge is to take an excursion to the Golden Gate National Recreation Area just outside of San Francisco. The park contains hiking trails, great spots for picnicking, and offers some of the best vantage points for panoramic photographs of the bridge leading into the city.\n\nDavid recently had some friends visit him in San Francisco, and he made sure to include a visit to the recreation area as part of their tour. They enjoyed walking through the trails, observing some of the native wildlife, and even having a casual picnic in the park. David’s friends were thankful that he guided them through this impressive area of California. They made sure to take a group photograph with the Golden Gate Bridge in the background. David’s friends had the picture framed, and they later presented it to David in order to thank him for his hospitality during their stay.",
+      "topic": 2,
+      "publishers": [
+        1,
+        2,
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 4,
+    "fields": {
+      "title": "Global warming - the government is burning forests",
+      "published_date": "2022-11-08T13:00:29Z",
+      "content": "In our modern world, there are many factors that place the wellbeing of the planet in jeopardy. While some people have the opinion that environmental problems are just a natural occurrence, others believe that human beings have a huge impact on the environment. Regardless of your viewpoint, take into consideration the following factors that place our environment as well as the planet Earth in danger.\n\nGlobal warming or climate change is a major contributing factor to environmental damage. Because of global warming, we have seen an increase in melting ice caps, a rise in sea levels, and the formation of new weather patterns. These weather patterns have caused stronger storms, droughts, and flooding in places that they formerly did not occur.\n\nAir pollution is primarily caused as a result of excessive and unregulated emissions of carbon dioxide into the air. Pollutants mostly emerge from the burning of fossil fuels in addition to chemicals, toxic substances, and improper waste disposal. Air pollutants are absorbed into the atmosphere, and they can cause smog, a combination of smoke and fog, in valleys as well as produce acidic precipitation in areas far away from the pollution source.\n\nIn many areas, people and local governments do not sustainably use their natural resources. Mining for natural gases, deforestation, and even improper use of water resources can have tremendous effects on the environment. While these strategies often attempt to boost local economies, their effects can lead to oil spills, interrupted animal habitats, and droughts.\n\nUltimately, the effects of the modern world on the environment can lead to many problems. Human beings need to consider the repercussions of their actions, trying to reduce, reuse, and recycle materials while establishing environmentally sustainable habits. If measures are not taken to protect the environment, we can potentially witness the extinction of more endangered species, worldwide pollution, and a completely uninhabitable planet.",
+      "topic": 3
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 5,
+    "fields": {
+      "title": "Do kids really like Halloween?",
+      "published_date": "2022-11-18T12:55:29Z",
+      "content": "Halloween (also referred to as All Hollows' Eve) is a holiday that's celebrated in America on 31 October of each year, regardless of what day of the week this date falls on. Although it is rooted in religion, Halloween today is enjoyed mainly because of its decorations, costumes, candy, treats, and general excitement, and furthermore, it is enjoyed by most everyone.\n\nBefore Halloween, many individuals carve a design into an orange-colored pumpkin, or a solid, durable vegetable. Once a personally satisfying design is carved, a lit candle is typically put inside a pumpkin, thereby making it a Jack-O-Lantern. At night, this design lights up against the darkness.\n\nBesides carving pumpkins, some celebrate Halloween by putting decorations up. Supernatural (referring in this case to non-natural creatures that're typically based in fiction) figures, including vampires, ghosts, werewolves, zombies, and more, generally account for most of these decorations. Bugs, spiders, cobwebs, gravestones, and anything else that can be considered creepy (or unusual and possibly scary) can also be found on Halloween, in decoration form.\n\nOnly some adults celebrate Halloween, and they generally do so by attending parties. Inversely, the vast majority of children dress in costume (Halloween costumes can be based upon anything, from the mentioned supernatural creatures to the stars of today's films) and walk from door to door in search of candy—a practice known as trick or treat—on Halloween. After knocking on a door (houses that participate in Halloween usually leave a light on), one says, \"Trick or Treat\" and a piece (or pieces!) of candy is given to him or her.",
+      "topic": 4,
+      "publishers": [
+        11
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 6,
+    "fields": {
+      "title": "Truth about The Statue of Liberty",
+      "published_date": "2022-11-18T12:55:29Z",
+      "content": "The Statue of Liberty, arguably one of New York City’s most iconic symbols, is a popular tourist attraction for first-time visitors to the city. This 150-foot monument was gifted to the United States from France in order to celebrate 100 years of America’s independence. The statue is located on Liberty Island, and it is accessible by taking a ferry from either Battery Park in New York City or Liberty State Park in Jersey City.\n\nWhen Claire visited the Statue of Liberty for the first time, she instantly admired it as a symbol of freedom. Claire made sure to make reservations before her visit because only 240 people are permitted to climb the staircase to the top of the statue every day. After climbing almost 400 stairs, Claire received spectacular views of the city from the statue’s crown.\n\nDuring her visit, Claire learned that the Statue of Liberty was not always the color that it is now. She found out that because the statue’s exterior is made of copper, the statue oxidized over time, giving it the greenish appearance it has in present day. When it was first constructed, the statue was the same color as a shiny penny!\n\nAfter touring the Statue of Liberty, Claire spent the rest of the day in New York City visiting other important monuments and historic landmarks. Claire left New York hoping to have had the time to explore more sites, but she can’t wait to return to the city in the future.",
+      "topic": 5,
+      "publishers": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 7,
+    "fields": {
+      "title": "Who shares a house with John Smith?",
+      "published_date": "2022-11-18T12:55:29Z",
+      "content": "Hi! Nice to meet you! My name is John Smith. I am 19 and a student in college. I go to college in New York. My favorite courses are Geometry, French, and History. English is my hardest course. My professors are very friendly and smart. It’s my second year in college now. I love it!\n\nI live in a big house on Ivy Street. It’s near the college campus. I share the house with three other students. Their names are Bill, Tony, and Paul. We help each other with homework. On the weekend, we play football together.\n\nI have a younger brother. He just started high school. He is 14 and lives with my parents. They live on Mulberry Street in Boston. Sometimes they visit me in New York. I am happy when they visit. My Mom always brings me sweets and candy when they come. I really miss them, too!",
+      "topic": 6,
+      "publishers": [
+        5
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 8,
+    "fields": {
+      "title": "Last letter?",
+      "published_date": "2022-11-08T13:00:29Z",
+      "content": "Hi, Fred!\n\nIt's been a while since we have been in touch. How has your semester been?\n\nI wanted to send an email update to you let you know how things have been going during my semester abroad here in Málaga, Spain. I've already been here for six weeks, and I feel like I am finally adapting to the culture. I'm also speaking the language more fluently.\n\nI arrived during the first week of September. The weather has been very nice. Even though it's October, it's still rather sunny and warm. In fact, I went to the beach and swam in the Mediterranean Sea earlier today.\n\nI am living with a very welcoming host family. I have my own private bedroom, but we eat breakfast, lunch, and dinner together. On Sundays, we eat a big home-cooked paella for lunch. In Spain, lunch is usually the biggest meal of the day. It's also very common for the people to take a midday nap right after a big meal. I am actually just waking up from my nap right now!\n\nOn weekdays, I take classes at the local university. There, I met several native Spanish speakers. They have been very kind and patient with me. At first, I struggled to comprehend their Spanish, but now I understand most of our conversations. They have commented that my Spanish has improved a lot since we first met. Now, I am more confident to use the language in other places like stores and restaurants.\n\nI am so glad that I decided to spend the semester here in Spain. We have an extended weekend coming up, so a group of my friends and I are going to travel to France for four days. It's so easy and inexpensive to travel internationally in Europe. I love it!\n\nI look forward to hearing from you soon. Like I said, don't hesitate to stay in touch more often. Perhaps you could even come to visit! What do you think?\n\nBest wishes,\nPatrick",
+      "topic": 6,
+      "publishers": [
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 9,
+    "fields": {
+      "title": "When does Valentine's Day take place in the United States?",
+      "published_date": "2022-11-08T13:00:29Z",
+      "content": "Valentine's Day (or Saint Valentine's Day) is a holiday that, in the United States, takes place on February 14, and technically signifies the accomplishments of St. Valentine, a third-century Roman saint.\n\nWith that said, most Americans, instead of honoring St. Valentine through religious ceremony, enjoy the holiday by engaging in \"romantic\" behavior with their significant other or someone who they wish to be their significant other; gifts, special dinners, and other acknowledgements of affection comprise most individuals' Valentine's Day celebrations.\n\nChocolates and flowers are commonly given as gifts during Valentine's Day, as are accompanying greeting cards (greeting card companies release new Valentine's Day designs annually). Red and pink are generally understood to be \"the colors\" of Valentine's Day, and many individuals, instead of celebrating romantically, spend the holiday with their friends and/or family members.\n\nVariations of Valentine's Day are celebrated across the globe throughout the year. In America, the holiday, although acknowledged by the vast majority of the population, isn't federally recognized; no time off work is granted for Valentine's Day.\n\n",
+      "topic": 4,
+      "publishers": [
+        1,
+        9
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 10,
+    "fields": {
+      "title": "Professions: fresh info",
+      "published_date": "2022-11-08T13:00:29Z",
+      "content": "As has been the case for many years, jobs, or forms of employment wherein employees perform a service or duty in exchange for financial compensation, play a prominent role in society. Furthermore, all jobs—even those of seemingly little significance—are important, as they simply wouldn't exist if their specific responsibilities weren't of value to employers (companies or persons that pay others for their work), customers (individuals who pay money for a product or service), and the economy generally.\n\nTeachers, or educational professionals tasked with helping students understand certain subjects and topics, are especially crucial today. In short, teachers help their students to become qualified for their future careers.\n\nDoctors, or medical professionals who specialize in providing health-related assistance to patients, are some of the most respected individuals in America and the world. It's the responsibility of doctors to help those who feel less-than-stellar to determine the underlying health issue(s) and recommend an effective treatment (or remedy to a disease, disorder, or condition).\n\nThere are quite a few types of specialty doctors in America (besides MD, which simply means \"medical doctor\"), all of whom can be referred to simply as \"Doctor (Name).\" Dentists (mouth/teeth doctors), dermatologists (skin doctors), and psychiatrists (mental-health doctors) are just a few examples of the many different types of doctors.\n\nAdditionally, nurses are medical professionals who help to administer doctor-ordered treatments to patients.\n\nPolice officers are law enforcement professionals whose job it is to protect citizens, solve crimes, and assure that rules and regulations are followed. Similarly, firefighters serve the public by responding to fires (and other emergency situations) and using high-tech equipment to extinguish these fires, while bringing any individuals who're in danger to safety.\n\nFarmers maintain fields of crops (or vegetable/fruit plants) and/or collections of animals with the intention of selling these products as food.\n\nChefs/cooks prepare meals in professional settings, including restaurants, cafeterias, and other venues wherein food and drink are sold, for customers. Chefs are generally experienced in cooking and managing kitchens.\n\nWaiters bring menus, beverages, meals, and ultimately, the check (or a bill of the foods and drinks purchased in a transaction) to tables in restaurants and other establishments that serve food.\n\nArtists produce art, or works of creative significance, including music, paintings, drawings, poetry, writing, and more.",
+      "topic": 9,
+      "publishers": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 11,
+    "fields": {
+      "title": "Truth aboout lorem 200",
+      "published_date": "2022-08-09T14:19:09Z",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam corporis eveniet magnam molestias odio tempore voluptas! Amet animi atque nobis quisquam? Aliquid, delectus molestiae officiis omnis saepe sequi! Accusamus aliquam, aliquid aperiam atque autem consequuntur cumque dolorem doloremque dolorum eos explicabo facere fugiat fugit illum impedit incidunt ipsa laborum, libero maxime nulla odit tenetur velit voluptatem. At, reprehenderit, sint! Architecto consectetur cumque debitis inventore iure, ratione ullam vel vero. Aliquam aperiam aut blanditiis corporis culpa debitis deleniti dolore dolorum ducimus error esse eum excepturi expedita fugiat ipsam iure, laboriosam minima molestias natus nesciunt nisi nulla odio officiis praesentium quas quidem quod quos ratione repellendus soluta tempore unde veritatis voluptatum. Accusantium adipisci aperiam architecto autem consequatur, impedit labore modi non odio rerum! A adipisci alias animi autem consectetur culpa, dolorem esse excepturi expedita incidunt inventore minima modi nam nihil pariatur, similique ullam voluptatum! Ducimus eveniet ex expedita, illo laboriosam libero sapiente. A ad alias dolore in non praesentium quam quis veniam voluptas! Aliquid aperiam beatae, doloribus earum est itaque laborum maxime nobis nostrum numquam obcaecati pariatur praesentium quae quam quo recusandae reiciendis unde voluptates. Aliquid consequatur eaque nam voluptas. Architecto deserunt, dolorum ex itaque minus molestias provident reprehenderit repudiandae!\n",
+      "topic": 11,
+      "publishers": [
+        7,
+        3
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 12,
+    "fields": {
+      "title": "Lorem 666?",
+      "published_date": "2022-08-09T14:19:09Z",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deleniti, eius enim eos esse facilis illo, ipsam nemo possimus quod quos tempore vitae voluptatem. Ab ad aut delectus deleniti distinctio ducimus ea eaque earum et id, inventore minima obcaecati odit omnis quae, quisquam quod ratione recusandae repellendus rerum saepe sapiente sequi tempora tempore temporibus. Aliquid amet aperiam asperiores aspernatur consectetur corporis dignissimos distinctio dolor dolore doloremque doloribus ducimus error, esse et explicabo in itaque iure labore laboriosam libero magni minus neque nihil omnis quae quam quasi quidem quis quos rerum sapiente soluta tempore voluptas! Amet aut cupiditate deleniti dolorem eaque est eum exercitationem explicabo hic ipsum molestias mollitia nihil provident quae quia repudiandae saepe, sapiente sed, vitae voluptas. Accusamus corporis cum deserunt dignissimos, dolor doloremque labore sit sunt velit vitae! Aliquid dolore laboriosam nemo quis ratione similique ut veritatis! A atque beatae consectetur dicta dolores dolorum ducimus expedita illo ipsum, laborum maiores nemo perspiciatis possimus provident rem reprehenderit sequi voluptatum! Amet beatae commodi cupiditate debitis deleniti distinctio doloremque eligendi eum harum iste, itaque labore, laudantium minus natus nemo neque non, nostrum odio praesentium quaerat quia ratione recusandae reiciendis repudiandae tempore totam velit voluptatibus. Amet consequuntur, cupiditate dicta et ipsa odit sit. Accusamus consequuntur inventore nemo reprehenderit? Aliquam consectetur culpa cupiditate doloremque fugit nam perferendis, sequi sunt! Atque explicabo neque quod! A accusantium amet asperiores assumenda aut cupiditate debitis delectus dolore dolorem dolorum error impedit incidunt, ipsum magnam magni mollitia nihil non nulla officiis perferendis quae quam qui quidem quis quisquam reiciendis repellat similique temporibus vel velit. Alias amet facilis itaque molestias provident quas ratione sint vitae. A ab aliquam animi, aperiam architecto cupiditate dignissimos dolores error eum facilis impedit iste iusto praesentium provident quas repudiandae sunt suscipit ullam veritatis voluptas? Dolores iste molestiae natus neque nihil non porro soluta temporibus. At dignissimos explicabo fugit molestias possimus. Distinctio earum et fuga illo ipsum laborum omnis possimus quaerat sunt temporibus. Ab accusantium aliquam architecto atque, consequuntur corporis eaque hic ipsum iste nam omnis quis reiciendis sapiente sequi, voluptatibus! Assumenda error esse, libero sed totam veritatis. Asperiores aut consectetur esse eum in libero nobis nostrum nulla odio officiis placeat, qui quisquam reprehenderit sed similique ut veniam vero! Doloribus eligendi hic, illo quibusdam temporibus veniam! A accusantium asperiores at corporis dicta fugit id itaque laborum magnam maxime mollitia nesciunt nihil non numquam obcaecati quam quia quibusdam quod, repellat rerum saepe sapiente sed suscipit tempora tenetur voluptatem voluptates! Accusamus alias aspernatur atque aut culpa cupiditate dolor dolorum eos error et exercitationem explicabo fugiat hic id illum impedit ipsam ipsum libero minus nemo nihil omnis optio porro possimus quibusdam quo quod similique sit tempora temporibus tenetur unde ut, velit. Asperiores, beatae consequatur, cumque doloremque eligendi illum, nesciunt odit officiis soluta tenetur unde vel voluptatibus. Ad adipisci blanditiis cum deleniti dolorem ea eveniet nesciunt nostrum odio vero! Ab culpa dignissimos dolorem eveniet fuga hic illum incidunt magni modi nisi perferendis perspiciatis, placeat porro quae quod ratione repudiandae sunt unde voluptatem voluptates! A ad aliquid, aperiam asperiores at atque autem commodi consequatur culpa dicta dolorem doloribus earum eos error exercitationem fuga fugiat fugit laborum magnam magni maiores molestias nam necessitatibus neque nisi, officia officiis perspiciatis porro quae quas quibusdam quos reiciendis repellat sed tempore voluptate voluptatum? Aliquid animi facere harum impedit iusto molestiae molestias nesciunt, sequi. Ad culpa cumque distinctio ea et id inventore non placeat praesentium provident quas quos repellat, repudiandae sapiente totam voluptatem voluptates. A aut beatae commodi debitis est eveniet exercitationem in incidunt ipsa, ipsum iure laboriosam libero molestias nulla possimus quidem rerum sunt tenetur ut vitae? A ab accusamus alias, deserunt dolor doloremque, ea eaque est eum, expedita explicabo facilis fuga impedit iure laborum maxime molestiae neque odit perspiciatis possimus praesentium quia ratione reprehenderit tempore ullam unde voluptates. A alias animi culpa deserunt, ducimus eaque earum, exercitationem explicabo labore nostrum soluta tempore temporibus. Ad aperiam cumque dolore enim excepturi facere, impedit, ipsam pariatur placeat sunt suscipit voluptatum! Ab assumenda dolor, doloremque eveniet facere ipsa nulla reiciendis reprehenderit similique, soluta temporibus?",
+      "topic": 11,
+      "publishers": [
+        6
+      ]
+    }
+  },
+  {
+    "model": "catalog.newspaper",
+    "pk": 13,
+    "fields": {
+      "title": "Was it a fake?",
+      "published_date": "2022-08-09T14:19:09Z",
+      "content": "It definitely was!!!",
+      "topic": 7,
+      "publishers": [
+        11,
+        7
+      ]
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 1,
+    "fields": {
+      "name": "Travel"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 2,
+    "fields": {
+      "name": "Helth"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 3,
+    "fields": {
+      "name": "Geography"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 4,
+    "fields": {
+      "name": "Holidays"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 5,
+    "fields": {
+      "name": "History"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 6,
+    "fields": {
+      "name": "Stories"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 7,
+    "fields": {
+      "name": "Politics"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 8,
+    "fields": {
+      "name": "Crime"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 9,
+    "fields": {
+      "name": "Business"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 10,
+    "fields": {
+      "name": "Trade"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 11,
+    "fields": {
+      "name": "Literature"
+    }
+  },
+  {
+    "model": "catalog.topic",
+    "pk": 12,
+    "fields": {
+      "name": "Art"
+    }
+  }
+]

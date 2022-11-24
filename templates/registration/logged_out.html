@@ -1,0 +1,31 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %}Logged out{% endblock %}
+
+{% block navigation %}{% endblock %}
+
+{% block content %}
+
+  <main>
+
+    <div class="section-header pb-6 bg-primary text-white">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+          <h1 class="display-3 mb-4">Logged out!</h1>
+          <br/>
+          <p class="lead mb-5">You can use this site only when you logged in :(</p>
+          <div class="alert bg-secondary" role="alert">
+            <a class="fw-bold text-white text-underline mx-1" href="{% url 'login'%}" target="_blank">Click here to login again</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+
+{% endblock content %}
+
+
+<a href="{% url 'login'%}">Click here to login again.</a>
