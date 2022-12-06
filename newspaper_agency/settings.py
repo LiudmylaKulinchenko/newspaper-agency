@@ -23,10 +23,10 @@ CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "django-insecure-j#vgo+8ka2&e5+xu6#nep3+33d@vyl*9e(nc-b*wt8mxtda118")
+SECRET_KEY = os.environ.get["DJANGO_SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DJANGO_DEBAG", "") != "False"
+DEBUG = "RENDER" not in os.environ
 
 # Assets Management
 ASSETS_ROOT = os.getenv("ASSETS_ROOT", "/static/assets")
