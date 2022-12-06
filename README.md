@@ -5,7 +5,7 @@ with userfriendly interface!
 
 ## Check it out!
 
-[The project deployed on NAME](PASTE_LINK_HERE)
+[The project deployed on Render](https://newspaper-agency-sg7t.onrender.com/)
 
 ## Installing
 
