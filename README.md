@@ -7,6 +7,11 @@ with userfriendly interface!
 
 [The project deployed on Render](https://newspaper-agency-sg7t.onrender.com/)
 
+```
+login: test.user
+password: qwer.user1234
+```
+
 ## Installing
 
 Python3 must be already installed
