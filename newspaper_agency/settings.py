@@ -31,7 +31,7 @@ DEBUG = "RENDER" not in os.environ
 # Assets Management
 ASSETS_ROOT = os.getenv("ASSETS_ROOT", "/static/assets")
 
-ALLOWED_HOSTS = ["127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1", "newspaper-agency-sg7t.onrender.com"]
 
 
 # Application definition
