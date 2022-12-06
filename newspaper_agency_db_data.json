@@ -339,7 +339,7 @@
     "model": "catalog.newspaper",
     "pk": 11,
     "fields": {
-      "title": "Truth aboout lorem 200",
+      "title": "Truth about lorem 200",
       "published_date": "2022-08-09T14:19:09Z",
       "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam corporis eveniet magnam molestias odio tempore voluptas! Amet animi atque nobis quisquam? Aliquid, delectus molestiae officiis omnis saepe sequi! Accusamus aliquam, aliquid aperiam atque autem consequuntur cumque dolorem doloremque dolorum eos explicabo facere fugiat fugit illum impedit incidunt ipsa laborum, libero maxime nulla odit tenetur velit voluptatem. At, reprehenderit, sint! Architecto consectetur cumque debitis inventore iure, ratione ullam vel vero. Aliquam aperiam aut blanditiis corporis culpa debitis deleniti dolore dolorum ducimus error esse eum excepturi expedita fugiat ipsam iure, laboriosam minima molestias natus nesciunt nisi nulla odio officiis praesentium quas quidem quod quos ratione repellendus soluta tempore unde veritatis voluptatum. Accusantium adipisci aperiam architecto autem consequatur, impedit labore modi non odio rerum! A adipisci alias animi autem consectetur culpa, dolorem esse excepturi expedita incidunt inventore minima modi nam nihil pariatur, similique ullam voluptatum! Ducimus eveniet ex expedita, illo laboriosam libero sapiente. A ad alias dolore in non praesentium quam quis veniam voluptas! Aliquid aperiam beatae, doloribus earum est itaque laborum maxime nobis nostrum numquam obcaecati pariatur praesentium quae quam quo recusandae reiciendis unde voluptates. Aliquid consequatur eaque nam voluptas. Architecto deserunt, dolorum ex itaque minus molestias provident reprehenderit repudiandae!\n",
       "topic": 11,

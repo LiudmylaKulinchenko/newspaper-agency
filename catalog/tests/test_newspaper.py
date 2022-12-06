@@ -7,7 +7,10 @@ from catalog.models import Newspaper, Topic
 
 NEWSPAPERS_ID = 1
 NEWSPAPERS_LIST_URL = reverse("catalog:newspaper-list")
-NEWSPAPERS_DETAIL_URL = reverse("catalog:newspaper-detail", args=[NEWSPAPERS_ID])
+NEWSPAPERS_DETAIL_URL = reverse(
+    "catalog:newspaper-detail",
+    args=[NEWSPAPERS_ID]
+)
 
 
 class PublicNewspaperTests(TestCase):

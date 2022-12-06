@@ -9,7 +9,6 @@ class FormsTests(TestCase):
             "username": "test",
             "password1": "1test1234",
             "password2": "1test1234",
-            "email": "test@test.com",
             "first_name": "Test first",
             "last_name": "Test last",
             "years_of_expirience": 5,

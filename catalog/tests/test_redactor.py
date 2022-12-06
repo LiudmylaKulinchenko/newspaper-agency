@@ -57,6 +57,9 @@ class PrivateRedactorTests(TestCase):
     def test_retrieve_detail_page(self):
         user_id = self.user.id
 
-        response = self.client.get(reverse("catalog:redactor-detail", args=[user_id]))
+        response = self.client.get(reverse(
+            "catalog:redactor-detail",
+            args=[user_id])
+        )
 
         self.assertEqual(response.status_code, 200)
