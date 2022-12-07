@@ -36,3 +36,7 @@ What's all the bells and whistles this project can perform?
 
 - Project homepage: http://127.0.0.1:8000/
 - Repository: https://github.com/LiudmylaKulinchenko/newspaper-agency
+
+## Demo
+
+![Website interface](demo_image.png)
